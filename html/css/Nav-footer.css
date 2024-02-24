@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    background-color: rgb(24, 37, 31);
+    font-family: Rasa;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.navbar-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3%;
+    border: 3px solid white;
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+    background: rgba(246, 203, 215, 0.5);
+    width: 93%;
+    height: 70px;
+    position: fixed;
+}
+
+.navbar-left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    margin-left: -35px;
+}
+
+.text-logo{
+    font-family: Stylish;
+    font-size: 26px;
+    margin-left: -20px;
+    color: #FFF;
+    margin-left: -35px;
+    pointer-events: none;
+}
+
+#check1{
+    display: none;
+}
+
+.m-c-pos{
+    display: none;
+}
+
+.navbar-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 15px;
+}
+
+.text-position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 7px;
+}
+
+.navbar-text1{
+    display: flex;
+    font-size: 20px;
+    color: rgb(220, 220, 220);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.50s all;
+}
+
+.navbar-text1:hover ~ .line1{
+    width: 100%;
+}
+
+.navbar-text{
+    display: flex;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.50s all;
+}
+
+.navbar-text:hover ~ .line{
+    width: 100%;
+}
+
+.line1{
+    width: 0%;
+    height: 3px;
+    border-radius: 50px;
+    background-color: rgb(220, 220, 220);
+    transition: 0.50s all;
+}
+
+.line{
+    width: 0%;
+    height: 3px;
+    border-radius: 50px;
+    background-color: white;
+    transition: 0.50s all;
+}
+
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+.profile-pic{
+    display: flex;
+    width: 25px;
+}
+
+
+
+
+@media (max-width:800px) {
+
+#check1{
+    display: none;
+}
+
+.menu{
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.30s;
+}
+
+.close{
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.30s;
+}
+
+.m-c-pos{
+    display: flex;
+}
+
+#check1:checked ~ .m-c-pos > .close{
+    opacity: 1;
+}
+
+#check1:checked ~ .m-c-pos > .menu{
+    opacity: 0;
+}
+
+#check1:checked ~ .navbar-right-side{
+    transform: translateX(-2.5%);
+}
+
+.navbar-right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 80px;
+    border: 3px solid white;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    background: rgba(246, 203, 215, 0.5);
+    width: 98%;
+    height: 85lvh;
+    transform: translateX(105%);
+    gap: 50px;
+    transition: 0.7s all ease-in-out;
+}
+
+}
