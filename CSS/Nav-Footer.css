@@ -1,0 +1,333 @@
+html,body{
+    margin: 0;
+    font-family: ABeeZee;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all .5s;
+}
+
+.navbar-style{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+.navbar-style-mobile{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
+
+
+.line{
+    width: 0px;
+    height: 2px;
+    background-color: #666;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.logo{
+    display: flex;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.text-pos1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: bold;
+    gap: 1px;
+    animation: drop-down1 0.5s ease-out;
+    animation-iteration-count: 1;
+    margin-right: 10px;
+}
+
+.text-pos2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: bold;
+    gap: 1px;
+    animation: drop-down1 .6s ease-out;
+    animation-iteration-count: 1;
+}
+
+.text-pos3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: bold;
+    gap: 1px;
+    animation: drop-down1 .6s ease-out;
+    animation-iteration-count: 1;
+}
+
+.text-pos4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-weight: bold;
+    gap: 1px;
+    animation: drop-down1 0.5s ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes drop-down1 {
+    from {transform: translateY(-100px);}
+    to {transform: translateY(0px);}
+}
+
+.nav-text1{
+    display: flex;
+    font-size: 20px;
+    font-family: Sono;
+    color: #666;
+    cursor: pointer;
+}
+
+.nav-text1:hover ~ .line{
+    width: 100%;
+}
+
+.nav-text2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    font-family: Sono;
+    color: #666;
+    cursor: pointer;
+}
+
+.nav-text2:hover ~ .line{
+    width: 100%;
+}
+
+.Home{
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+}
+
+.Home1{
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    font-family: Sono;
+    color: #666;
+    cursor: pointer;
+}
+
+.Home:hover ~ .line{
+    width: 100%;
+}
+
+.Cart{
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+}
+
+.Cart:hover ~ .line{
+    width: 100%;
+}
+
+.cartQuantaty{
+    display: none;
+    position: absolute;
+    top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: rgb(220, 0, 0);
+    font-family: Sono;
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+#checkbox-m-c{
+    display: none;
+}
+
+.menu-close-pos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: drop-down1 0.5s ease-out;
+    animation-iteration-count: 1;
+}
+
+.menu{
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.close{
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 80%;
+    height: 50vh;
+    padding: 0px 10%;
+    background-color: #666;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+#checkbox-m-c{
+    display: none;
+}
+
+.menu-close-pos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: drop-down1 0.5s ease-out;
+    animation-iteration-count: 1;
+}
+
+.menu{
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    transition: all .3s;
+}
+
+.close{
+    display: flex;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#checkbox-m-c:checked ~ .navbar > .navbar-style-mobile > .menu-close-pos > .menu{
+    opacity: 0;
+}
+
+#checkbox-m-c:checked ~ .navbar > .navbar-style-mobile > .menu-close-pos > .close{
+    opacity: 1;
+}
+
+#checkbox-m-c:checked ~ .navbar > .navbar-style{
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar-style{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.navbar-style{
+    display: flex;
+    position: absolute;
+    top: 100px;
+    width: 80%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-style .logo{
+    display: none;
+}
+
+.navbar-style .text-pos1{
+    margin: 0;
+}
+
+.navbar-style .Home{
+    display: none;
+}
+
+.navbar-style .Home1{
+    display: flex;
+}
+
+.navbar-style .Cart{
+    display: none;
+}
+
+.navbar-style .text-pos4{
+    display: none;
+    margin: 0;
+}
+
+.navbar-style-mobile{
+    display: flex;
+}
+
+.logo{
+    width: 100px;
+}
+
+}
+
+@media (max-width: 380px) {
+    
+#checkbox-m-c:checked ~ .navbar{
+    margin-bottom: 20px;
+}
+
+}
+
+a{
+    text-decoration: none;
+}
