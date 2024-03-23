@@ -111,7 +111,8 @@
 .container1-style{
     display: flex;
     position: relative;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     width: 80%;
     height: 100vh;
@@ -119,6 +120,29 @@
     color: #666;
 }
 
+
+.container1-text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+.brands-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    gap: 50px;
+}
+
+.brands{
+    display: flex;
+    width: 90px;
+}
 
 
 
@@ -132,7 +156,8 @@
 .container2-style{
     display: flex;
     position: relative;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
     height: 100vh;
@@ -140,28 +165,79 @@
     color: #666;
 }
 
-
-
-
-
-
-.container3{
+.container2-text1{
     display: flex;
-    justify-content: center;
-}
-
-.container3-style{
-    display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.clothes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.clothes-brand-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 350px;
+    background-color: #FFF;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clothes-pos{
+    display: flex;
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.clothes-descrption{
+    font-size: 16px;
     width: 80%;
-    height: 100vh;
-    padding: 0px 10%;
-    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.clothes-brand{
+    display: flex;
+    align-self: center;
 }
 
 
+.more-clothes-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    height: 40px;
+    padding: 0px 20px;
+    background-color: #c9e2c5;
+    border: 2px solid #c9e2c5;
+    border-radius: 500px;
+    font-size: 18px;
+    color: #FFF;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.more-clothes-btn:hover{
+    background-color: #FFF;
+    color: #c9e2c5;
+}
 
 
 
@@ -207,6 +283,47 @@
 .main-text2{
     font-size: 20px;
     display: none;
+}
+
+
+.container2-style{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.clothes-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2-text1{
+    font-size: 26px;
+}
+
+.clothes-brand-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 23vh;
+    background-color: #FFF;
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clothes-pos{
+    display: flex;
+    width: auto;
+    height: 13vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.more-clothes-btn{
+    font-size: 16px;
 }
 
 }

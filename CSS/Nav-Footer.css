@@ -264,6 +264,10 @@ html,body{
     opacity: 1;
 }
 
+#checkbox-m-c:checked ~ .navbar{
+    margin-bottom: 30px;
+}
+
 #checkbox-m-c:checked ~ .navbar > .navbar-style{
     visibility: visible;
     opacity: 1;
@@ -323,7 +327,7 @@ html,body{
 @media (max-width: 380px) {
     
 #checkbox-m-c:checked ~ .navbar{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 }
