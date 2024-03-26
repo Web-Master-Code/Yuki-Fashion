@@ -13,11 +13,14 @@
 </head>
 <body>
     
+    <script src="../Js/Yuki-Fashion.js"></script>
+
     <div class="background"></div>
     <div class="background2"></div>
     <div class="background3"></div>
     
     <input type="checkbox" id="checkbox-m-c">
+    <input type="checkbox" id="cart-checker">
 
     <nav class="navbar">
 
@@ -39,8 +42,8 @@
                 <div class="line"></div>
             </div>
             <div class="text-pos4">
-                <a href="Cart/cart.html" class="Cart"><img src="images/cart-large-minimalistic-svgrepo-com.svg" class="Cart"></a>
-                <div class="cartQuantaty">1</div>
+                <label for="cart-checker" class="Cart"><img src="images/cart-large-minimalistic-svgrepo-com.svg" class="Cart"></label>
+                <div class="cartQuantaty" id="cartQuantaty">0</div>
                 <div class="line"></div>
             </div>
 
@@ -49,8 +52,10 @@
         <div class="navbar-style-mobile">
 
             <div class="text-pos4">
-                <a href="Cart/cart.html" class="Cart"><img src="images/cart-large-minimalistic-svgrepo-com.svg" class="Cart"></a>
-                <div class="cartQuantaty">1</div>
+                <label for="cart-checker" class="Cart">
+                    <img src="images/cart-large-minimalistic-svgrepo-com.svg" class="Cart">
+                </label>
+                <div class="cartQuantaty" id="cartQuantaty">0</div>
                 <div class="line"></div>
             </div>
             <img src="images/logo_3.png" class="logo">
@@ -62,6 +67,16 @@
         </div>
 
     </nav>
+
+    <div class="Cart-section">
+
+        <div class="Cart-section-style">
+
+            <div class="Cart-background"></div>
+
+        </div>
+
+    </div>
 
     <main class="main-container">
 

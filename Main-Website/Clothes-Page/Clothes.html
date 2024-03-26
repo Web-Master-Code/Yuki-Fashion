@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuki Clothes</title>
+    <link rel="stylesheet" href="../../CSS/Nav-Footer.css">
+    <link rel="stylesheet" href="../../CSS/Yuki-Fashion.css">
+    <link rel="stylesheet" href="css/Clothes.css">
+    <link rel="icon" href="images/logo_3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <script src="../../Js/Yuki-Fashion.js"></script>
+
+    <div class="background"></div>
+    <div class="background2"></div>
+    <div class="background3"></div>
+
+    <input type="checkbox" id="checkbox-m-c">
+    <input type="checkbox" id="cart-checker">
+
+    <nav class="navbar">
+
+
+        <div class="navbar-style">
+
+            <div class="text-pos1">
+                <a href="Yuki-fashion.html" class="Home1"><span class="Home1">HOME</span></a>
+                <a href="Yuki-fashion.html" class="Home"><img src="images/home-1-svgrepo-com.svg" class="Home"></a>
+                <div class="line"></div>
+            </div>
+            <div class="text-pos2">
+                <a href="#brands" class="nav-text1"><span class="nav-text1">BRANDS</span></a>
+                <div class="line"></div>
+            </div>
+            <img src="images/logo_3.png" class="logo">
+            <div class="text-pos3">
+                <a href="Clothes-Page/Clothes.html" class="nav-text2"><span class="nav-text2">CLOTHES</span></a>
+                <div class="line"></div>
+            </div>
+            <div class="text-pos4">
+                <label for="cart-checker" class="Cart"><img src="images/cart-large-minimalistic-svgrepo-com.svg" class="Cart"></label>
+                <div class="cartQuantaty" id="cartQuantaty">0</div>
+                <div class="line"></div>
+            </div>
+
+        </div>
+
+        <div class="navbar-style-mobile">
+
+            <div class="text-pos4">
+                <label for="cart-checker" class="Cart">
+                    <img src="images/cart-large-minimalistic-svgrepo-com.svg" class="Cart">
+                </label>
+                <div class="cartQuantaty" id="cartQuantaty">0</div>
+                <div class="line"></div>
+            </div>
+            <img src="images/logo_3.png" class="logo">
+            <label for="checkbox-m-c" class="menu-close-pos">
+                <img src="images/menu-btn.svg" class="menu">
+                <img src="images/close-btn.svg" class="close">
+            </label>
+
+        </div>
+
+    </nav>
+
+    <div class="Cart-section">
+
+        <div class="Cart-section-style">
+
+            <div class="Cart-background"></div>
+
+        </div>
+
+    </div>
+
+
+    <div class="main-clothes-container">
+
+        <div class="main-clothes-container-style">
+
+            <div class="ck">
+
+                <img src="images/calvin-klein-1.svg" class="clothes-logo">
+                <div class="ck-clothes">
+
+                    <div class="ck-add-container">
+                        <img src="images/calvin klein1 (24.99).jpg" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Black blouse with only</span>
+                            <span class="price">$24.99 USD and 9.62 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                    <div class="ck-add-container">
+                        <img src="images/calvin klein2 (29.99).jpg" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Purple sport clothes with only</span>
+                            <span class="price">$29.99 USD and 11.55 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                    <div class="ck-add-container">
+                        <img src="images/calvin klein3 (19.99).webp" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">White blouse with only</span>
+                            <span class="price">$19.99 USD and 7.70 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                    <div class="ck-add-container">
+                        <img src="images/calvin klein4 (29.99).webp" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Raisin black blouse with only</span>
+                            <span class="price">$29.99 USD and 11.55 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ck">
+
+                <img src="images/gap.svg" class="clothes-logo">
+                <div class="ck-clothes">
+
+                    <div class="ck-add-container">
+                        <img src="images/Gap1 (19.99).webp" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Riasin black and gray pants with only</span>
+                            <span class="price">$19.99 USD and 7.70 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                    <div class="ck-add-container">
+                        <img src="images/Gap2 (27.99).webp" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Dark blue and beige blouses with only</span>
+                            <span class="price">$27.99 USD and 10.78 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                    <div class="ck-add-container">
+                        <img src="images/Gap3 (29.99).webp" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Black blouse with only</span>
+                            <span class="price">$29.99 USD and 11.55 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                    <div class="ck-add-container">
+                        <img src="images/Gap 4 (19.99).webp" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Gray hodi with only</span>
+                            <span class="price">$19.99 USD and 7.70 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                    <div class="ck-add-container">
+                        <img src="images/Gap5 (34.99).webp" class="ck-clothes-pic">
+                        <span class="clothes-text">
+                            <span class="desc-text">Black hodi with only</span>
+                            <span class="price">$34.99 USD and 13.47 OMR</span>
+                        </span>
+                        <button class="add-to-cart-btn" onclick="document.getElementById('cartQuantaty').innerHTML = (cartCounter = cartCounter + 1)">Add to Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-style">
+
+            <img src="images/logo_3.png" class="footer-logo">
+
+            <div class="footer-inf">
+                <span class="information-head-text">Contact Us</span>
+                
+                <div class="instagram">
+                    <img src="images/instagram-svgrepo-com (1).svg" class="information-icon">
+                    <span class="information-text">Instagram</span>
+                </div>
+
+                <div class="Facebook">
+                    <img src="images/facebook-176-svgrepo-com (1).svg" class="information-icon">
+                    <span class="information-text">Facebook</span>
+                </div>
+                
+                <div class="Email">
+                    <img src="images/logo_1.png" class="information-icon">
+                    <span class="information-text">Email@gmail.com</span>
+                </div>
+
+            </div>
+
+            <div class="footer-about-us">
+                <span class="aboutUs-head-text">About Us</span>
+                <span class="aboutUs-text">YUKI Fashion's Website for the ones who is looking for new brand clothes .. We have a whole store here and with different type of payment.</span>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+</html>

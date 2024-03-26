@@ -154,15 +154,17 @@ html,body{
 }
 
 .cartQuantaty{
-    display: none;
+    font-family: Sono;
+    display: flex;
     position: absolute;
-    top: 30px;
+    top: 25px;
+    margin-left: 3px;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    font-size: 12px;
+    font-size: 14px;
     background-color: rgb(220, 0, 0);
     font-family: Sono;
     color: #FFF;

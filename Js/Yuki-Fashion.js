@@ -1,0 +1,1 @@
+let cartCounter = 0;
