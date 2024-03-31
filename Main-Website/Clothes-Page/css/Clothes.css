@@ -1,3 +1,7 @@
+body{
+    background-color: #c9e2c5;
+}
+
 .main-clothes-container{
     display: flex;
     justify-content: center;
@@ -9,10 +13,10 @@
     align-items: center;
     flex-direction: column;
     width: 90%;
-    height: 280vh;
+    height: auto;
     padding: 0 5%;
-    position: relative;
     margin-top: 20px;
+    margin-bottom: 50px;
     gap: 20px;
 }
 
@@ -33,6 +37,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
     padding: 20px 50px;
+    margin-top: 100px;
 }
 
 .ck-clothes{
@@ -98,4 +103,20 @@
 .add-to-cart-btn:hover{
     background-color: #FFF;
     color: #c9e2c5;
+}
+
+
+.Cart-section-style{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 521vh;
+    padding: 0 5%;
+    position: absolute;
+    z-index: 99;
+    visibility: hidden;
+    background-color: #c9e2c5;
+    opacity: 0;
+    transition: all .5s;
 }
